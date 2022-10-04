@@ -5,16 +5,14 @@ import Policies from "./Policies";
 
 function Location() {
   return (
-    <React.Fragment>
-      <div className="details">
-        <div className="image-box">
-          <div id="location-image" className="location-image"></div>
-        </div>
-        <Description />
-        <WorkingHrs />
-        <Policies />
+    <div className="details">
+      <div className="image-box">
+        <div id="location-image" className="location-image"></div>
       </div>
-    </React.Fragment>
+      <Description />
+      <WorkingHrs />
+      <Policies />
+    </div>
   );
 }
 

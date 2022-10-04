@@ -12,7 +12,6 @@ function WorkingHrs() {
           05:00 pm{" "}
         </p>
       </div>
-
       <Charges />
     </div>
   );

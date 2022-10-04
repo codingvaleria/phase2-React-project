@@ -4,12 +4,10 @@ import Location from "./Location";
 
 function Reccomendation() {
   return (
-    <React.Fragment>
-      <div id="body-details">
-        <LocationList />
-        <Location />
-      </div>
-    </React.Fragment>
+    <div id="body-details">
+      <LocationList />
+      <Location />
+    </div>
   );
 }
 
