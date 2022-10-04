@@ -1,12 +1,12 @@
 import React from "react";
 
-function NavBar() {
+function NavBar({ href, text }) {
   return (
     <div className="header-wrapper">
       <header> ZuruKenya</header>
-      <a href="./about.html" className="header-link">
+      <a href={href} className="header-link">
         {" "}
-        About Us
+        {text}
       </a>
     </div>
   );

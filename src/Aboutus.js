@@ -1,8 +1,10 @@
 import React from "react";
+import NavBar from "./NavBar";
 
 function Aboutus() {
   return (
     <React.Fragment>
+      <NavBar href="./index.html" text="Home" />
       <div class="details">
         <h1 id="title"> About Us</h1>
         <div id="description-container" class="description-container">
