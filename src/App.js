@@ -5,9 +5,9 @@ import React from "react";
 function App() {
   return (
     <React.Fragment>
-      <div class="header-wrapper">
+      <div className="header-wrapper">
         <header> ZuruKenya</header>
-        <a href="./about.html" class="header-link">
+        <a href="./about.html" className="header-link">
           {" "}
           About Us
         </a>
@@ -15,30 +15,33 @@ function App() {
 
       <div id="body-details">
         <div id="menu">
-          <div class="menu-inner">
+          <div className="menu-inner">
             <h2> Recommendation </h2>
           </div>
-          <ul id="locations" class="locations">
-            <li class="location">
+          <ul id="locations" className="locations">
+            <li className="location">
               <a href="#"> Nairobi Museum </a>
             </li>
-            <li class="location">
+            <li className="location">
               <a href="#"> Nairobi National Park</a>
             </li>
-            <li class="location">
+            <li className="location">
               <a href="#">Memorial Park </a>
             </li>
           </ul>
         </div>
 
-        <div class="details">
-          <div class="image-box">
-            <div id="location-image" class="location-image"></div>
+        <div className="details">
+          <div className="image-box">
+            <div id="location-image" className="location-image"></div>
           </div>
 
           <h1 id="title"></h1>
-          <div id="description-container" class="description-container"></div>
-          <div class="working-hours-container">
+          <div
+            id="description-container"
+            className="description-container"
+          ></div>
+          <div className="working-hours-container">
             <h2> Working Hours </h2>
             <div id="working-hours">
               <p>Contact Number: 0709907411 </p>
@@ -48,10 +51,10 @@ function App() {
               </p>
             </div>
 
-            <div class="charges">
+            <div className="charges">
               <h2>
                 {" "}
-                Entry Charges <span class="Ksh">(price in Ksh) </span>
+                Entry Charges <span className="Ksh">(price in Ksh) </span>
               </h2>
               <table>
                 <tr>
@@ -82,7 +85,7 @@ function App() {
             </div>
           </div>
 
-          <div class="policy-container">
+          <div className="policy-container">
             <h2> Policies </h2>
             <ul id="policy-list">
               <li>Strictly no cash payments </li>
