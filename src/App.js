@@ -1,14 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import Reccomendation from "./Reccomendation";
+import Home from "./Home";
 import AdminForm from "./AdminForm";
 
 function App() {
   return (
     <div>
-      {/* <Reccomendation /> */}
-      <AdminForm />
+      <Home />
+      {/* <AdminForm /> */}
     </div>
   );
 }
