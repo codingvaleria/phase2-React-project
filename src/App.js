@@ -6,10 +6,10 @@ import Reccomendation from "./Reccomendation";
 
 function App() {
   return (
-    <React.Fragment>
+    <div>
       <NavBar />
       <Reccomendation />
-    </React.Fragment>
+    </div>
   );
 }
 
