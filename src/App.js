@@ -3,12 +3,18 @@ import "./App.css";
 import React from "react";
 import Home from "./Home";
 import AdminForm from "./AdminForm";
+import { Route, Routes } from "react-router-dom";
+import NavBar from "./NavBar";
+import About from "./About";
 
 function App() {
   return (
     <div>
-      <Home />
-      {/* <AdminForm /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/admin" element={<AdminForm />} />
+      </Routes>
     </div>
   );
 }
