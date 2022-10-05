@@ -6,7 +6,7 @@ import NavBar from "./NavBar";
 function Home() {
   return (
     <React.Fragment>
-      <NavBar href="./about.html" text="About Us" />
+      <NavBar href="/about" text="About Us" />
       <div id="body-details">
         <LocationList />
         <Location />
