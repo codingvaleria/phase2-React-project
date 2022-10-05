@@ -14,7 +14,7 @@ th {
   font-family: "Source Serif Pro", serif;
 }
 
-body {
+.upload-form-wrapper {
   padding: 0 10px;
   background-color: #9bb796;
 }
@@ -23,11 +23,11 @@ body {
   font-size: 18px;
   max-width: 800px;
   width: 100%;
-  margin: 20px auto;
   padding: 60px;
   padding-top: 20px;
   padding-right: 90px;
   border-radius: 18px;
+  margin: auto;
 }
 
 .title {

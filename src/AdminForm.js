@@ -3,7 +3,7 @@ import "./Form.css";
 
 function AdminForm() {
   return (
-    <React.Fragment>
+    <div className="upload-form-wrapper">
       <form id="form" className="upload-form">
         <h2 className="title"> Site Update Form </h2>
         <div className="input-field">
@@ -130,7 +130,7 @@ function AdminForm() {
           <input type="submit" id="submit" value="Submit" />
         </div>
       </form>
-    </React.Fragment>
+    </div>
   );
 }
 
