@@ -1,6 +1,10 @@
 import React from "react";
 
-function LocationList({ recommendations }) {
+function LocationList({ recommendations, setLocation }) {
+  function handleClick(recommendation) {
+    console.log(recommendation);
+    setLocation(recommendation);
+  }
   return (
     <div id="menu">
       <div className="menu-inner">
@@ -10,7 +14,11 @@ function LocationList({ recommendations }) {
       <ul id="locations" className="locations">
         {recommendations.map((recommendation) => {
           return (
-            <li className="location" key={recommendation.id}>
+            <li
+              className="location"
+              key={recommendation.id}
+              onClick={() => handleClick(recommendation)}
+            >
               {recommendation.location}
             </li>
           );
