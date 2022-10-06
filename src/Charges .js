@@ -1,7 +1,7 @@
 import React from "react";
 
 function Charges({ entryCharges }) {
-  const nationalities = ["citizen", "resident", "non-resident"];
+  const persons = ["citizen", "resident", "non-resident"];
   const ageGroups = ["child", "student", "adult"];
   return (
     <div className="charges">
@@ -17,16 +17,15 @@ function Charges({ entryCharges }) {
             <th>Adult </th>
           </tr>
         </thead>
+
         <tbody>
-          {nationalities.map((nationality) => {
+          {persons.map((person) => {
             return (
-              <tr key={nationality}>
-                <td>{nationality}</td>
+              <tr key={person}>
+                <td>{person}</td>
                 {ageGroups.map((age) => {
                   return (
-                    <td key={age}>
-                      {entryCharges[`${nationality}-${age}-charge`]}
-                    </td>
+                    <td key={age}>{entryCharges[`${person}-${age}-charge`]}</td>
                   );
                 })}
               </tr>

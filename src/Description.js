@@ -1,6 +1,6 @@
 import React from "react";
 
-function Description({ description }) {
+function Description({ description, title }) {
   return (
     <React.Fragment>
       <h1 id="title">{title}</h1>
