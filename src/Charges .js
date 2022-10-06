@@ -1,10 +1,11 @@
 import React from "react";
 
-function Charges() {
+function Charges({ entryCharges }) {
+  const nationalities = ["citizen", "resident", "non-resident"];
+  const ageGroups = ["child", "student", "adult"];
   return (
     <div className="charges">
       <h2>
-        {" "}
         Entry Charges <span className="Ksh">(price in Ksh) </span>
       </h2>
       <table>
@@ -16,26 +17,21 @@ function Charges() {
             <th>Adult </th>
           </tr>
         </thead>
-
         <tbody>
-          <tr>
-            <td> Citizen </td>
-            <td id="citizen-child-charge"> 200 </td>
-            <td id="citizen-student-charge"> 100</td>
-            <td id="citizen-adult-charge"> 100</td>
-          </tr>
-          <tr>
-            <td> Resident</td>
-            <td id="resident-child-charge"> 200 </td>
-            <td id="resident-student-charge"> 100</td>
-            <td id="resident-adult-charge"> 100</td>
-          </tr>
-          <tr>
-            <td>Non- Resident</td>
-            <td id="non-resident-child-charge"> 200 </td>
-            <td id="non-resident-student-charge"> 100</td>
-            <td id="non-resident-adult-charge"> 100</td>
-          </tr>
+          {nationalities.map((nationality) => {
+            return (
+              <tr key={nationality}>
+                <td>{nationality}</td>
+                {ageGroups.map((age) => {
+                  return (
+                    <td key={age}>
+                      {entryCharges[`${nationality}-${age}-charge`]}
+                    </td>
+                  );
+                })}
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

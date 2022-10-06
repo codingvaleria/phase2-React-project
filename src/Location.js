@@ -20,11 +20,13 @@ function Location({ location }) {
           className="location-image"
         ></div>
       </div>
-
-      <Description description={location.description} />
-      <WorkingHrs WorkingHrs={location.WorkingHrs} />
+      <Description
+        title={location.location}
+        description={location.description}
+      />
+      <WorkingHrs workingHrs={location.workingHrs} />
       <Policies policies={location.policies} />
-      <Charges charges={location.charges} />
+      <Charges entryCharges={location.entryCharges} />
     </div>
   );
 }
