@@ -12,7 +12,13 @@ function Location({ location }) {
   return (
     <div className="details">
       <div className="image-box">
-        <div id="location-image" className="location-image"></div>
+        <div
+          id="location-image"
+          style={{
+            backgroundImage: `url(${location.image})`,
+          }}
+          className="location-image"
+        ></div>
       </div>
 
       <Description description={location.description} />
