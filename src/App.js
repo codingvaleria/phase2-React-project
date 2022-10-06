@@ -1,10 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 import Home from "./Home";
 import AdminForm from "./AdminForm";
 import { Route, Routes } from "react-router-dom";
-import NavBar from "./NavBar";
 import About from "./About";
 
 function App() {
