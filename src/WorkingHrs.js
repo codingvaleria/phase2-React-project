@@ -1,14 +1,12 @@
 import React from "react";
-import Charges from "./Charges ";
 
-function WorkingHrs({ workingHrs }) {
+function WorkingHrs({ workingHours }) {
   return (
     <div className="working-hours-container">
       <h2> Working Hours </h2>
       <div id="working-hours">
-        <p> {workingHrs} </p>
+        <p> {workingHours} </p>
       </div>
-      <Charges />
     </div>
   );
 }

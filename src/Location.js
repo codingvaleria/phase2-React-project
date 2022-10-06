@@ -24,7 +24,7 @@ function Location({ location }) {
         title={location.location}
         description={location.description}
       />
-      <WorkingHrs workingHrs={location.workingHrs} />
+      <WorkingHrs workingHours={location.workingHours} />
       <Policies policies={location.policies} />
       <Charges entryCharges={location.entryCharges} />
     </div>
