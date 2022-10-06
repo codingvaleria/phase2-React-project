@@ -41,7 +41,7 @@ header {
   font-weight: bolder;
 }
 
-.details {
+.about-details {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -54,20 +54,21 @@ header {
   margin-bottom: 50px;
   font-size: 18px;
   padding-top: 20px;
+  border: none;
 }
 
-.details p {
+.about-details p {
   margin: 4px 0;
 }
 
-.details h2 {
+.about-details h2 {
   margin: 0;
   margin-top: 30px;
   margin-bottom: 10px;
   padding-top: 20px;
 }
 
-.details img {
+.about-details img {
   display: flex;
   flex-direction: row;
   margin-top: 20px;

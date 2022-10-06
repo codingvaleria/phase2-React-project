@@ -1,11 +1,12 @@
 import React from "react";
 import NavBar from "./NavBar";
+import "./About.css";
 
 function About() {
   return (
     <React.Fragment>
       <NavBar href="/" text="Home" />
-      <div className="details">
+      <div className="about-details">
         <h1 id="title"> About Us</h1>
         <div id="description-container" className="description-container">
           We are your tour directory. We give you recommendations of places to
@@ -14,7 +15,7 @@ function About() {
           amenities of the place to visit.
         </div>
 
-        {/* <img src="./images/safari.jpeg"> </img> */}
+        <img src="./image/safari.jpeg" />
       </div>
     </React.Fragment>
   );
