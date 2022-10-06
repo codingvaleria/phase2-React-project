@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Description from "./Description";
 import WorkingHrs from "./WorkingHrs";
 import Policies from "./Policies";
+import Charges from "./Charges ";
 
-function Location() {
+function Location({ location }) {
+  if (!location) {
+    return null;
+  }
+
   return (
     <div className="details">
       <div className="image-box">
         <div id="location-image" className="location-image"></div>
       </div>
-      <Description />
-      <WorkingHrs />
-      <Policies />
+
+      <Description description={location.description} />
+      <WorkingHrs WorkingHrs={location.WorkingHrs} />
+      <Policies policies={location.policies} />
+      <Charges charges={location.charges} />
     </div>
   );
 }
