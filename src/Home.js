@@ -5,20 +5,26 @@ import NavBar from "./NavBar";
 
 function Home() {
   const [recommendations, setReccomendations] = useState([]);
-  // const [listedLocations, setListedLocations] = useState([]);
+  const [location, setLocation] = useState(null);
 
   useEffect(() => {
     fetch("http://localhost:8002/recommendations")
       .then((r) => r.json())
-      .then((recommendations) => setReccomendations(recommendations));
+      .then((recommendations) => {
+        setReccomendations(recommendations);
+        setLocation(recommendations[0]);
+      });
   }, []);
 
   return (
     <React.Fragment>
       <NavBar href="/about" text="About Us" />
       <div id="body-details">
-        <LocationList recommendations={recommendations} />
-        <Location />
+        <LocationList
+          recommendations={recommendations}
+          setLocation={setLocation}
+        />
+        <Location location={location} />
       </div>
     </React.Fragment>
   );

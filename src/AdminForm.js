@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
 
 function AdminForm() {
+  const [state, setState] = useState({
+    location: "something",
+  });
+
+  function handleChange(e) {
+    setState({
+      ...state,
+      [e.target.name]: e.target.value,
+    });
+  }
+
   return (
     <div className="upload-form-wrapper">
       <form id="form" className="upload-form">
         <h2 className="title"> Site Update Form </h2>
         <div className="input-field">
           <label for="location">Location:</label>
-          <input type="text" id="location" name="location" />
+          <input
+            onChange={handleChange}
+            value={state.location}
+            type="text"
+            id="location"
+            name="location"
+          />
         </div>
         <div className="input-field">
           <label for="imagefield"> Image:</label>
