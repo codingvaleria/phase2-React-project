@@ -47,7 +47,7 @@ function AdminForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch(`http://localhost:8002/recommendations`, {
+    fetch(`https://zurukenya.herokuapp.com/recommendations`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
