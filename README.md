@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# ZuRuKenya Web APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This project entails creating a travel directory Web application called ZuruKenya. It gives tourists recommendations of places to visit within Kenya. The app is meant to enlist tour recommendations and then tourists can view. A recommendation will include a photo, a description, charges, opening and closing hours, and policies of the place to visit. The admin will be able to add these details on an admin form which will save on the server and the recommendation will show up in the web.
 
-In the project directory, you can run:
+## The Client Side
 
-### `npm start`
+The client side shows suggestions on different areas a user can visit within the country. An overview image of the tour location, entry fee charges, opening and closing hours and policies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Images
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The following image has been used in the app.
+![landing page image](public/image/safari.jpeg)
 
-### `npm test`
+## Color Palette
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following is the chosen color scheme:
+![Color palette](public/image/themecolors.jpeg)
 
-### `npm run build`
+## Fonts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The following are the fonts used for this project:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Nunito (Google Fonts)
+1. Source Serif Pro (Google Fonts)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Pages
 
-### `npm run eject`
+The web application has the following pages:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## About us
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This page provides a summary of the services by the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### The Client View Page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Client View Page](public/image/clientview.png)
 
-## Learn More
+The client side shows suggestions on different areas a user can visit within the country. An overview image of the tour location, entry fee charges, opening and closing hours and policies.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### The Site Update Form/view
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Admin Form View Page](public/image/adminview.png)
 
-### Code Splitting
+The admin view shows the form template for the admin to add details to the recommendations on user view.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Definition of Terms
 
-### Analyzing the Bundle Size
+#### Location
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This is the particular place suggested to visit.
 
-### Making a Progressive Web App
+#### Image
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This is a link to an image that gives the general impression , represented by the location in form of a piece of art.
 
-### Advanced Configuration
+#### Description
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This is an overview of the location in terms of the history of the place, what the person is likely to experience, see, and learn about the location.
 
-### Deployment
+#### Charges
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This are the rates charged for entry to the location. Divided into citizen and non citizens, adults, students and children.
 
-### `npm run build` fails to minify
+#### Policies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This are the rules or guidelines that a user is supposed to adhere to within the location or meet before they get to location.
+
+## Functionality
+
+This page provides a summary of the services by the application.
+
+### To run the app locally
+
+From inside the directory containing this project, run npm run server to start the JSON server you can verify the server is running by navigating to http://localhost:8002/recommendations
+
+Leave the server running for now. Open a second terminal window and navigate to the directory and run npm start to start the up running on the browser. the app opens on the broswer through this link http://localhost:8000/. The App works by Fetching data based first load displaying that data on the page. JSON Server follows RESTful conventions. As a result of these conventions, we can expect to be able to access specific records directly by clicks.
+
+If you open a new tab in your browser and visit http://localhost:8000/admin-form, you will be able to add details to the browser by filling up the form.
+
+By capturing user input via event listeners and using fetch requests, we can update the ZuruKenya web page content as a user requests it.
+
+### To run the app in the browser directly
+
+In your browser, copy or follow link https://vermillion-bienenstitch-d21ea5.netlify.app/.
+
+### To view and update json file details on heroku
+
+In your browser, https://zurukenya.herokuapp.com/recommendations
+
+## To load details for the browser
+
+To update details on the browser, an admin can fill details though the form via this link: https://vermillion-bienenstitch-d21ea5.netlify.app/admin-form.
