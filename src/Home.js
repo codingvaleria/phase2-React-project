@@ -8,7 +8,7 @@ function Home() {
   const [location, setLocation] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8002/recommendations")
+    fetch("https://zurukenya.herokuapp.com/recommendations")
       .then((r) => r.json())
       .then((recommendations) => {
         setReccomendations(recommendations);
