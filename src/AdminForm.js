@@ -47,7 +47,7 @@ function AdminForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch(`https://zurukenya.herokuapp.com/recommendations`, {
+    fetch(`https://zuru-kenya-backend-8c85.onrender.com/recommendations`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

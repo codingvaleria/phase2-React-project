@@ -8,7 +8,7 @@ function Home() {
   const [location, setLocation] = useState(null);
 
   useEffect(() => {
-    fetch("https://zurukenya.herokuapp.com/recommendations")
+    fetch("https://zuru-kenya-backend-8c85.onrender.com/recommendations")
       .then((r) => r.json())
       .then((recommendations) => {
         setReccomendations(recommendations);
